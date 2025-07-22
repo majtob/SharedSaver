@@ -1,0 +1,26 @@
+{
+  "name": "sharedsaver",
+  "version": "1.0.0",
+  "description": "A fintech application for shared saving and lending accounts",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && python manage.py runserver",
+    "frontend": "cd frontend && npm start",
+    "install-deps": "npm install && cd frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "test": "cd frontend && npm test",
+    "backend-test": "cd backend && python manage.py test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "fintech",
+    "django",
+    "react",
+    "shared-savings",
+    "loans"
+  ],
+  "author": "SharedSaver Team",
+  "license": "MIT"
+} 
